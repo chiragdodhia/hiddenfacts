@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b First name:
+  = @contact.first_name
+%p
+  %b Last name:
+  = @contact.last_name
+%p
+  %b Sender email:
+  = @contact.sender_email
+%p
+  %b Receiver email:
+  = @contact.receiver_email
+%p
+  %b Mobile no:
+  = @contact.mobile_no
+%p
+  %b Message:
+  = @contact.message
+
+= link_to 'Edit', edit_contact_path(@contact)
+\|
+= link_to 'Back', contacts_path
