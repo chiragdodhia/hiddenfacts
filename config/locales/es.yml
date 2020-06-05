@@ -1,0 +1,7 @@
+es:
+  new_contact: nuevo contacto
+  first_name: "Nombre de pila"
+  last_name: "Apellido"
+  sender_email: "Correo electrónico"
+  mobile_no: "Móvil"
+  message: "Mensaje"

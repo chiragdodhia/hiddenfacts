@@ -30,4 +30,9 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  new_contact: "Hello world"
+  first_name: "First Name"
+  last_name: "Last Name"
+  sender_email: "Email"
+  mobile_no: "Mobile"
+  message: "Message"
