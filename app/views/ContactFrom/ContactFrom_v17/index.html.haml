@@ -1,0 +1,113 @@
+!!!
+= #require "app/assets/stylesheets/fonts/montserrat/Montserrat-Bold.ttf"
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Contact V17
+    %meta{:charset => "UTF-8"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    / ===============================================================================================
+    = favicon_link_tag asset_path("/icons/favicon.ico"), :rel => 'icon', :type =>  'image/png'
+    / ===============================================================================================
+    = stylesheet_link_tag "/vendor/bootstrap/css/bootstrap.min.css"
+    / ===============================================================================================
+    = stylesheet_link_tag "/fonts/font-awesome.min.css"
+    / ===============================================================================================
+    = stylesheet_link_tag "/fonts/icon-font.min.css"
+    / ===============================================================================================
+    = stylesheet_link_tag "/vendor/animate/animate.css"
+    / ===============================================================================================
+    = stylesheet_link_tag "/vendor/css-hamburgers/hamburgers.min.css"
+    / ===============================================================================================
+    = stylesheet_link_tag "/vendor/animsition/css/animsition.min.css"
+    / ===============================================================================================
+    = stylesheet_link_tag "/vendor/select2/select2.min.css"
+    / ===============================================================================================
+    = stylesheet_link_tag "/vendor/daterangepicker/daterangepicker.css"
+    / ===============================================================================================
+    = stylesheet_link_tag "/css/util.css"
+    = stylesheet_link_tag "/css/main.css"
+    / ===============================================================================================
+  %body
+    .container-contact100
+      .wrap-contact100
+        %form.contact100-form.validate-form
+          %span.contact100-form-title
+            Send Us A Message
+          %label.label-input100{:for => "first-name"} Tell us your name *
+          .wrap-input100.rs1-wrap-input100.validate-input{"data-validate" => "Type first name"}
+            %input#first-name.input100{:name => "first-name", :placeholder => "First name", :type => "text"}/
+            %span.focus-input100
+          .wrap-input100.rs2-wrap-input100.validate-input{"data-validate" => "Type last name"}
+            %input.input100{:name => "last-name", :placeholder => "Last name", :type => "text"}/
+            %span.focus-input100
+          %label.label-input100{:for => "email"} Enter your email *
+          .wrap-input100.validate-input{"data-validate" => "Valid email is required: ex@abc.xyz"}
+            %input#email.input100{:name => "email", :placeholder => "Eg. example@email.com", :type => "text"}/
+            %span.focus-input100
+          %label.label-input100{:for => "phone"} Enter phone number
+          .wrap-input100
+            %input#phone.input100{:name => "phone", :placeholder => "Eg. +1 800 000000", :type => "text"}/
+            %span.focus-input100
+          %label.label-input100{:for => "message"} Message *
+          .wrap-input100.validate-input{"data-validate" => "Message is required"}
+            %textarea#message.input100{:name => "message", :placeholder => "Write us a message"}
+            %span.focus-input100
+          .container-contact100-form-btn
+            %button.contact100-form-btn
+              Send Message
+        .contact100-more.flex-col-c-m{:style => "background-image: url('images/bg-01.jpg');"}
+          .flex-w.size1.p-b-47
+            .txt1.p-r-25
+              %span.lnr.lnr-map-marker
+            .flex-col.size2
+              %span.txt1.p-b-20
+                Address
+              %span.txt2
+                Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US
+          .dis-flex.size1.p-b-47
+            .txt1.p-r-25
+              %span.lnr.lnr-phone-handset
+            .flex-col.size2
+              %span.txt1.p-b-20
+                Lets Talk
+              %span.txt3
+                +1 800 1236879
+          .dis-flex.size1.p-b-47
+            .txt1.p-r-25
+              %span.lnr.lnr-envelope
+            .flex-col.size2
+              %span.txt1.p-b-20
+                General Support
+              %span.txt3
+                contact@example.com
+    #dropDownSelect1
+    / ===============================================================================================
+    %script{:src => "vendor/jquery/jquery-3.2.1.min.js"}
+    / ===============================================================================================
+    %script{:src => "vendor/animsition/js/animsition.min.js"}
+    / ===============================================================================================
+    %script{:src => "vendor/bootstrap/js/popper.js"}
+    %script{:src => "vendor/bootstrap/js/bootstrap.min.js"}
+    / ===============================================================================================
+    %script{:src => "vendor/select2/select2.min.js"}
+    :javascript
+      $(".selection-2").select2({
+      	minimumResultsForSearch: 20,
+      	dropdownParent: $('#dropDownSelect1')
+      });
+    / ===============================================================================================
+    %script{:src => "vendor/daterangepicker/moment.min.js"}
+    %script{:src => "vendor/daterangepicker/daterangepicker.js"}
+    / ===============================================================================================
+    %script{:src => "vendor/countdowntime/countdowntime.js"}
+    / ===============================================================================================
+    %script{:src => "js/main.js"}
+    / Global site tag (gtag.js) - Google Analytics
+    %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"}
+    :javascript
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-23581568-13');

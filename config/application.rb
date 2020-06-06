@@ -12,6 +12,8 @@ module AjackusAssignment
     config.load_defaults 6.0
     # config.i18n.load_path += Dir[Rails.root.join('locales', '*.{rb,yml}')]
     config.i18n.default_locale = :en
+    config.assets.precompile << %w( *.scss *.css *.js )
+    config.assets.paths << "#{Rails.root}/vendor/assets"
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
