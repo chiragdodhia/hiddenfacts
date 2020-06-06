@@ -20,7 +20,7 @@ class ContactsController < ApplicationController
 
   # GET /contacts/1/edit
   def edit
-    render 'ContactFrom/ContactFrom_v17/index'
+    render 'contacts/contact'
   end
 
   # POST /contacts
