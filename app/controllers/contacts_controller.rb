@@ -2,50 +2,45 @@ class ContactsController < ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
   around_action :switch_locale
 
-  # GET /contacts
-  # GET /contacts.json
   def index
     @contacts = Contact.all
   end
 
-  # GET /contacts/1
-  # GET /contacts/1.json
   def show
   end
 
-  # GET /contacts/new
   def new
     @contact = Contact.new
   end
 
-  # GET /contacts/1/edit
   def edit
-    render 'contacts/contact'
   end
 
-  # POST /contacts
-  # POST /contacts.json
+  def contact
+  end
+
   def create
     @contact = Contact.new(contact_params)
+    @contact.first_name = params['first-name']
+    @contact.last_name = params['last-name']
+    @contact.sender_email = params['email']
+    @contact.receiver_email = "chiragdodhia1997@gmail.com"
+    @contact.mobile_no = params['mobile_no']
+    @contact.message = params['message']
 
-    respond_to do |format|
-      if @contact.save
-        format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
-        format.json { render :show, status: :created, location: @contact }
-      else
-        format.html { render :new }
-        format.json { render json: @contact.errors, status: :unprocessable_entity }
-      end
+    if @contact.save
+      redirect_to contact_ajackus_url, notice: 'sent_message'
+    else
+      render :contact, notice: 'error_message'
     end
   end
 
   def switch_locale(&action)
+    redirect_to root_url(locale: params[:set_locale]) if params[:set_locale]
     locale = params[:locale] || I18n.default_locale
     I18n.with_locale(locale, &action)
   end
 
-  # PATCH/PUT /contacts/1
-  # PATCH/PUT /contacts/1.json
   def update
     respond_to do |format|
       if @contact.update(contact_params)
@@ -58,8 +53,6 @@ class ContactsController < ApplicationController
     end
   end
 
-  # DELETE /contacts/1
-  # DELETE /contacts/1.json
   def destroy
     @contact.destroy
     respond_to do |format|
@@ -76,6 +69,6 @@ class ContactsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def contact_params
-      params.require(:contact).permit(:first_name, :last_name, :sender_email, :receiver_email, :mobile_no, :message)
+      params.permit(:first_name, :last_name, :sender_email, :receiver_email, :mobile_no, :message)
     end
 end

@@ -30,9 +30,24 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  new_contact: "Hello world"
+  message_label: "Send us a message"
+  name_label: "TELL US YOUR NAME"
   first_name: "First Name"
   last_name: "Last Name"
+  email_label: "ENTER YOUR EMAIL"
   sender_email: "Email"
-  mobile_no: "Mobile"
-  message: "Message"
+  eg: "Eg."
+  example: "example"
+  phone_label: "ENTER PHONE NUMBER"
+  message: "MESSAGE"
+  message_placeholder: "Write us a message"
+  send_message: "SEND MESSAGE"
+  address_label: "Address"
+  corporate_phone_label: "Lets Talk"
+  support_label: "General Support"
+  error_message: "One or more fields have an error. Please check and try again."
+  sent_message: "Thank you for your message. It has been sent."
+
+
+
+

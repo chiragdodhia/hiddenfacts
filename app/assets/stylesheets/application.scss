@@ -18,3 +18,22 @@
  *= require fonts/font-awesome.min.css
  *= require fonts/icon-font.min.css
  */
+.locale {
+  float: right;
+  margin: 1em;
+}
+.check {
+  width: 100%;
+}
+.div_flex {
+  display: flex;
+}
+.back-image {
+  background-image: url('bg-01.jpg');
+}
+.contact100-form {
+  padding-top: 0px !important;
+}
+.success_message {
+  text-align: center;
+}
