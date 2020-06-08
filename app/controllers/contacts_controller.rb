@@ -24,7 +24,7 @@ class ContactsController < ApplicationController
 
   def switch_locale(&action)
     redirect_to root_url(locale: params[:set_locale]) if params[:set_locale]
-    locale = params[:locale] || I18n.default_locale
+    locale = params[:locale].present? && I18n.available_locales.include?(params[:locale].to_sym) && params[:locale].to_sym || I18n.default_locale
     I18n.with_locale(locale, &action)
   end
 end
