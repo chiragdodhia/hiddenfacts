@@ -3,5 +3,6 @@ Rails.application.routes.draw do
     resources :contacts
     get 'contact' => "contacts#contact", :as => "contact_info"
     root 'contacts#contact', as: 'root', via: :all
+    get "(:any)" => "contacts#contact", :as => "any_route"
   end
 end
