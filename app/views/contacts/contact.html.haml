@@ -32,13 +32,13 @@
     .container-contact100
       .wrap-contact100
         .contact100-form
-          %div.check
+          %div.max_width
             = form_tag root_path, class: 'locale'  do
               = select_tag 'set_locale',                         |
                 options_for_select(LANGUAGES, I18n.locale.to_s), |
                 onchange: 'this.form.submit()'
-          = form_with(url: contacts_path, method: "post", local: true, :class => "validate-form check" ) do
-            %span.contact100-form-title
+          = form_with(url: contacts_path(@locale), method: "post", local: true, :class => "validate-form max_width" ) do
+            %span.contact100-form-title.contact-title
               = t(:message_label)
             %label.label-input100{:for => "first-name"} #{t(:name_label)} *
             .div_flex

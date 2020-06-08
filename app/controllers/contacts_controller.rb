@@ -17,19 +17,21 @@ class ContactsController < ApplicationController
   end
 
   def contact
+    @locale = params[:locale]
   end
 
   def create
-    @contact = Contact.new(contact_params)
+    @contact = Contact.new
     @contact.first_name = params['first-name']
     @contact.last_name = params['last-name']
     @contact.sender_email = params['email']
-    @contact.receiver_email = "chiragdodhia1997@gmail.com"
-    @contact.mobile_no = params['mobile_no']
+    @contact.receiver_email = ENV['ADMIN_EMAIL']
+    @contact.mobile_no = params['phone']
     @contact.message = params['message']
 
     if @contact.save
-      redirect_to contact_ajackus_url, notice: 'sent_message'
+      ContactMailer.send_message(@contact).deliver_later
+      redirect_to contact_info_url(params['locale']), notice: 'sent_message'
     else
       render :contact, notice: 'error_message'
     end
@@ -69,6 +71,6 @@ class ContactsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def contact_params
-      params.permit(:first_name, :last_name, :sender_email, :receiver_email, :mobile_no, :message)
+      params.permit('first-name', 'last-name', 'email', 'phone', 'message')
     end
 end
