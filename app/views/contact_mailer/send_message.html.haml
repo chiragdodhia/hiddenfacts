@@ -1,21 +1,17 @@
-%html
-  %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-  %body
-    %p
-      You got a new message
-    %p
-      Message details
-      %br/
-      \--------------------------
-    %p
-      Name: #{@msg.first_name} #{@msg.last_name}
-    %p
-      Email: #{@msg.sender_email}
-    %p
-      Phone: #{@msg.mobile_no}
-    %p
-      Message:
-      %br/
-      \----------
-    %p= @msg.message
+%p
+  You got a new message
+%p
+  Message details
+  %br/
+  \--------------------------
+%p
+  Name: #{@msg.first_name} #{@msg.last_name}
+%p
+  Email: #{@msg.sender_email}
+%p
+  Phone: #{@msg.mobile_no}
+%p
+  Message:
+  %br/
+  \----------
+%p= @msg.message

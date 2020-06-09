@@ -6,5 +6,27 @@
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+
+    = favicon_link_tag asset_path("/icons/favicon.ico"), :rel => 'icon', :type =>  'image/png'
+    / ===============================================================================================
+    = stylesheet_link_tag "vendor/bootstrap/css/bootstrap.min.css"
+    / ===============================================================================================
+    = stylesheet_link_tag "fonts/font-awesome.min.css"
+    / ===============================================================================================
+    = stylesheet_link_tag "fonts/icon-font.min.css"
+    / ===============================================================================================
+    = stylesheet_link_tag "vendor/animate/animate.css"
+    / ===============================================================================================
+    = stylesheet_link_tag "vendor/css-hamburgers/hamburgers.min.css"
+    / ===============================================================================================
+    = stylesheet_link_tag "vendor/animsition/css/animsition.min.css"
+    / ===============================================================================================
+    = stylesheet_link_tag "vendor/select2/select2.min.css"
+    / ===============================================================================================
+    = stylesheet_link_tag "vendor/daterangepicker/daterangepicker.css"
+    / ===============================================================================================
+    = stylesheet_link_tag "css/util.css"
+    = stylesheet_link_tag "css/main.css"
+    / ===============================================================================================
   %body
     = yield
