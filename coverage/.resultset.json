@@ -1,0 +1,51 @@
+{
+  "Unit Tests": {
+    "coverage": {
+    },
+    "timestamp": 1591701204
+  },
+  "Minitest": {
+    "coverage": {
+      "/home/chirag/rails_projects/ajackus_assignment/test/controllers/contacts_controller_test.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/test/mailers/contact_mailer_test.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/test/models/contact_test.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1591701230
+  }
+}
