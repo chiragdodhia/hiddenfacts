@@ -6,16 +6,500 @@
   },
   "Minitest": {
     "coverage": {
-      "/home/chirag/rails_projects/ajackus_assignment/test/controllers/contacts_controller_test.rb": {
+      "/home/chirag/rails_projects/ajackus_assignment/app/models/application_record.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/app/models/contact.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/app/channels/application_cable/channel.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/app/controllers/application_controller.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/app/controllers/contacts_controller.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/app/mailers/contact_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/app/helpers/contacts_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/app/helpers/application_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1591724092
+  },
+  "RSpec": {
+    "coverage": {
+      "/home/chirag/rails_projects/ajackus_assignment/config/environment.rb": {
+        "lines": [
+          null,
+          1,
+          null,
+          null,
+          1
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/config/application.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/config/boot.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/config/environments/test.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/config/initializers/application_controller_renderer.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/config/initializers/assets.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/config/initializers/backtrace_silencers.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/config/initializers/content_security_policy.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/config/initializers/cookies_serializer.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          1
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/config/initializers/filter_parameter_logging.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/config/initializers/inflections.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/config/initializers/locale.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/config/initializers/mime_types.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/config/initializers/wrap_parameters.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/config/routes.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/app/helpers/contacts_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/spec/controllers/contacts_controller_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
-          0,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/app/controllers/contacts_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
           0,
           null,
           null,
+          null,
+          1,
+          null,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/app/models/contact.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/chirag/rails_projects/ajackus_assignment/app/mailers/contact_mailer.rb": {
+        "lines": [
+          1,
           1,
           0,
           0,
@@ -23,29 +507,15 @@
           null
         ]
       },
-      "/home/chirag/rails_projects/ajackus_assignment/test/mailers/contact_mailer_test.rb": {
+      "/home/chirag/rails_projects/ajackus_assignment/app/mailers/application_mailer.rb": {
         "lines": [
           1,
-          null,
           1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/home/chirag/rails_projects/ajackus_assignment/test/models/contact_test.rb": {
-        "lines": [
           1,
-          null,
-          1,
-          null,
-          null,
-          null,
           null
         ]
       }
     },
-    "timestamp": 1591701230
+    "timestamp": 1591726813
   }
 }
