@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
   scope "(:locale)" do
-    resources :contacts
-    get 'contact' => "contacts#contact", :as => "contact_info"
+    post 'contacts' => "contacts#create"
     root 'contacts#contact', as: 'root', via: :all
-    get "(:any)" => "contacts#contact", :as => "any_route"
+    get "(:any)" => "contacts#contact", :as => "contact_info"
   end
 end
